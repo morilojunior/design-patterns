@@ -1,0 +1,19 @@
+{
+    "name": "morilojunior/design-patterns",
+    "authors": [
+        {
+            "name": "Morilo Junior",
+            "email": "morilo@picolotec.com.br"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "App\\": "src"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
