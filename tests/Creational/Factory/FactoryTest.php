@@ -3,13 +3,17 @@
 namespace Test\Creational\Factory;
 
 use PHPUnit\Framework\TestCase;
-use App\Creational\Factory\Factory;
+use App\Creational\FactoryMethod\Main;
 
 class FactoryTest extends TestCase
 {
     public function testFunctionName()
     {
-        $factory = new Factory();
-        $this->assertEquals(12, $factory->FunctionName(11));
+        $factory = new Main();
+        $objeto = $factory->execute('Bola');
+        $this->assertEquals('Rolar', $objeto->action());
+
+        // $objeto = $factory->execute('Quadrado');
+        // $this->assertEquals('Tombar', $objeto->action());
     }
 }
